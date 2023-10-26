@@ -1,0 +1,11 @@
+body {
+  background-image: url("./assets/cinco_continentes.JPG");
+  background-size: cover; /* La imagen se ajustará al tamaño del cuerpo y se recortará si es necesario */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
+}
+
+h1,
+h2 {
+  color: antiquewhite;
+}

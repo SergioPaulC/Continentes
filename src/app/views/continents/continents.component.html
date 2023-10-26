@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="card" (click)="showCountries('América')">
+                <img src="./../../../assets/america.JPG" class="card-img-top" alt="América">
+                <div class="card-body">
+                    <h5 class="card-title">América</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="card" (click)="showCountries('África')">
+                <img src="./../../../assets/africa.JPG" class="card-img-top" alt="América">
+                <div class="card-body">
+                    <h5 class="card-title">África</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="card" (click)="showCountries('Asia')">
+                <img src="./../../../assets/asia.JPG" class="card-img-top" alt="Asia">
+                <div class="card-body">
+                    <h5 class="card-title">Asia</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="card" (click)="showCountries('Europa')">
+                <img src="./../../../assets/europa.JPG" class="card-img-top" alt="Europa">
+                <div class="card-body">
+                    <h5 class="card-title">Europa</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="card" (click)="showCountries('Oceanía')">
+                <img src="./../../../assets/oceania.jpeg" class="card-img-top" alt="Oceanía">
+                <div class="card-body">
+                    <h5 class="card-title">Oceanía</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="selectedContinentCountries.length > 0">
+    <div class="container mt-4">
+        <h2 class="text-white">Países de {{ selectedContinent }} :</h2>
+        <ul class="list-group">
+            <li *ngFor="let pais of selectedContinentCountries" class="list-group-item">
+                <a [routerLink]="['/cities', selectedContinent, pais]">{{ pais }}</a>
+            </li>
+        </ul>
+    </div>
+</div>

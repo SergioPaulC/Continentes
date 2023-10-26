@@ -1,0 +1,17 @@
+.card-img-top {
+  width: 100%; /* Establece el ancho al 100% para que todas las imágenes se ajusten al ancho de la tarjeta */
+  height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+}
+
+.card {
+  height: 100%; /* Asegura que la tarjeta ocupe todo el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  white-space: nowrap; /* Evita que el título se divida en varias líneas */
+  overflow: hidden; /* Oculta el texto que no cabe en el espacio disponible */
+  text-overflow: ellipsis; /* Muestra puntos suspensivos (...) para indicar que hay más texto oculto */
+}
