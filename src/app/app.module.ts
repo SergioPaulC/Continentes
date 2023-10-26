@@ -7,6 +7,9 @@ import { ContinentsComponent } from './views/continents/continents.component';
 import { CitiesComponent } from './views/cities/cities.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './views/navbar/navbar.component';
+import { LandingpageComponent } from './views/landingpage/landingpage.component';
+import { FooterComponent } from './views/footer/footer.component';
 
 
 @NgModule({
@@ -14,6 +17,9 @@ import { RouterModule, Routes } from '@angular/router';
     AppComponent,
     ContinentsComponent,
     CitiesComponent,
+    NavbarComponent,
+    LandingpageComponent,
+    FooterComponent,
   ],
 
   imports: [

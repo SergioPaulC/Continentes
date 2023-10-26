@@ -15,3 +15,14 @@
   overflow: hidden; /* Oculta el texto que no cabe en el espacio disponible */
   text-overflow: ellipsis; /* Muestra puntos suspensivos (...) para indicar que hay más texto oculto */
 }
+
+h1 {
+  text-align: center;
+}
+
+.jumbotronMyStyle {
+
+  color: white;
+  text-align: center;
+
+}

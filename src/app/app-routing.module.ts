@@ -1,10 +1,13 @@
-import { NgModule } from '@angular/core';
+import { ContentChild, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContinentsComponent } from './views/continents/continents.component';
 import { CitiesComponent } from './views/cities/cities.component';
+import { LandingpageComponent } from './views/landingpage/landingpage.component';
 
 const routes: Routes = [
-  // { path: 'continentes', component: ContinentsComponent },
+  { path: '', component: LandingpageComponent },
+  // { path: 'landingpage', component: LandingpageComponent },
+  { path: 'continents', component: ContinentsComponent },
   { path: 'cities/:continente/:pais', component: CitiesComponent },
   // { path: '', redirectTo: 'continentes', pathMatch: 'full' }
 ];

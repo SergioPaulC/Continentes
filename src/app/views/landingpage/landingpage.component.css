@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+    color:white;
+    font-size: 45px;
+}
+
+p{
+    font-size: 35px;
+    /* color: rgb(2, 8, 41); */
+}
+.jumbotronMyStyle {
+
+    color: white;
+    text-align: center;
+
+
+}
+
+.jumbotronMyStyle h1{
+
+    color: white;
+    text-align: center;
+
+}
+
+.imageContainer  {
+    text-align: center;
+
+}
+
+/* .container img {
+    width: 100%;
+    display: grid;
+    place-content: center;
+} */
+
+ .container img {
+    /* object-fit: cover; */
+    width: 90%;
+    height: 50%;
+    text-align: center;
+}
